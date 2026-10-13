@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Proprietary Goodix binaries, never commit
+*.dll
+
+# Build output, rebuild from fpsvc.c and stub.c
+*.exe
+
+# Device-specific calibration
+frames/
+re/frames/
+re/research/frames/
+*.blob
+
+# Biometric data, never commit
+templates/
+re/templates/
+testset/
+re/testset/
+re/research/testset/
+presses/
+*.raw
+*.pgm
+*.png
+*.bin
+
+# Research scratch
+re/research/proj/
+dll_log.txt
+*.log

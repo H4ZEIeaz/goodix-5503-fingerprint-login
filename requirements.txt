@@ -1,0 +1,5 @@
+pyusb
+numpy
+scipy
+pillow
+crcmod   # only used by the upstream reference driver_5503.py

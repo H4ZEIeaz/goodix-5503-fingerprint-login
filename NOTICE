@@ -1,0 +1,18 @@
+This project builds on prior open-source work. Credit and licenses:
+
+Vendored USB and TLS protocol code, MIT licensed:
+  goodix.py, protocol.py, tool.py, driver_5503.py
+  from https://github.com/goodix-fp-linux-dev/goodix-fp-dump, MIT License.
+  Upstream lineage: Antonio Ospite's goodix_fp_dump, LGPL-2.1.
+  These files remain under their original license. Keep this attribution.
+
+Reverse-engineering method and algorithm context, inspiration only, no code copied:
+  seaweeduk/goodix53x5-libfprint and the aitorcalero fork, a native Linux port
+  of Goodix's Milan algorithm for related sensors, validated against the vendor
+  DLL. This project uses the same byte-exact DLL-as-oracle approach for the 5503,
+  documented in re/research/.
+
+NOT included and NOT redistributable:
+  GoodixEngineAdapter.dll and any Goodix driver binaries are proprietary and are
+  NOT part of this repository. Users must supply their own copy extracted from a
+  licensed Windows Goodix driver installation. See README.

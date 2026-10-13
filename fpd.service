@@ -1,0 +1,13 @@
+[Unit]
+Description=Goodix 5503 fingerprint auth daemon (user session)
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/goodix-5503-fingerprint-login
+ExecStart=%h/goodix-5503-fingerprint-login/.venv/bin/python %h/goodix-5503-fingerprint-login/fpd.py thumb 3
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
